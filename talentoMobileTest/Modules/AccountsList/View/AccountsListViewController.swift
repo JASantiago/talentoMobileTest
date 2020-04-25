@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AccountsListViewController.swift
 //  talentoMobileTest
 //
 //  Created by  Jose  Santiago on 4/25/20.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AccountsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
