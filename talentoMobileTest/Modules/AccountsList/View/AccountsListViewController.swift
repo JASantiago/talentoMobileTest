@@ -13,6 +13,8 @@ class AccountsListViewController: UIViewController {
     // MARK: Outlets
     
     @IBOutlet weak var accountsTableView: UITableView!
+    @IBOutlet weak var toggleVisibilityButton: UIButton!
+    @IBOutlet weak var toggleVisibilityButtonImageView: UIImageView!
     
     // MARK: Life Cycle
 
@@ -21,14 +23,21 @@ class AccountsListViewController: UIViewController {
         configureTableView()
         presenter.delegate = self
         presenter.getAccounts()
+        toggleVisibilityButton.addTarget(self, action: #selector(updateVisibilityValue), for: .touchUpInside)
     }
     
     // MARK: Properties
     
     private let presenter = AccountsListPresenter()
-    private var accountsList: [Account] = [] {
+    private var accountsList: [Account] = []
+    private var visibleAccountData: [Account] = [] {
         didSet {
             accountsTableView.reloadData()
+        }
+    }
+    private var enableFullListVisibility = false {
+        didSet {
+            triggerListVisibility()
         }
     }
     
@@ -39,6 +48,15 @@ class AccountsListViewController: UIViewController {
         accountsTableView.dataSource = self
         accountsTableView.register(AccountItemCell.nib, forCellReuseIdentifier: AccountItemCell.identifier)
     }
+    
+    @objc private func updateVisibilityValue() {
+        enableFullListVisibility = !enableFullListVisibility
+    }
+    
+    private func triggerListVisibility() {
+        visibleAccountData = enableFullListVisibility ? accountsList : accountsList.filter({ $0.isVisible == true })
+        toggleVisibilityButtonImageView?.image = enableFullListVisibility ? UIImage(named: "eye_slash_fill") : UIImage(named: "eye_fill")
+    }
 
 }
 
@@ -46,13 +64,13 @@ class AccountsListViewController: UIViewController {
 
 extension AccountsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return accountsList.count
+        return visibleAccountData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         guard let customCell = accountsTableView.dequeueReusableCell(withIdentifier: AccountItemCell.identifier, for: indexPath) as? AccountItemCell else { return cell }
-        customCell.model = accountsList[indexPath.row]
+        customCell.model = visibleAccountData[indexPath.row]
         cell = customCell
         return cell
     }
@@ -63,5 +81,6 @@ extension AccountsListViewController: UITableViewDelegate, UITableViewDataSource
 extension AccountsListViewController: AccountsListDelegate {
     func updateListWith(data: AccountListResponse) {
         accountsList = data.accounts
+        triggerListVisibility()
     }
 }

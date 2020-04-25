@@ -17,9 +17,27 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPO-Rc-shP" userLabel="navBar">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye_fill" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-hl-lKK">
+                                        <rect key="frame" x="370" y="16" width="24" height="24"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pd-63-f3g">
+                                        <rect key="frame" x="370" y="16" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="fwV-XN-m2R"/>
+                                            <constraint firstAttribute="height" constant="24" id="g9P-SZ-768"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="3Pd-63-f3g" firstAttribute="trailing" secondItem="nOw-hl-lKK" secondAttribute="trailing" id="3RE-Hn-RID"/>
+                                    <constraint firstItem="3Pd-63-f3g" firstAttribute="top" secondItem="nOw-hl-lKK" secondAttribute="top" id="HDE-L4-OX1"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Pd-63-f3g" secondAttribute="trailing" constant="20" id="Lf0-l8-h3D"/>
+                                    <constraint firstItem="3Pd-63-f3g" firstAttribute="leading" secondItem="nOw-hl-lKK" secondAttribute="leading" id="UtS-BZ-4gh"/>
+                                    <constraint firstItem="3Pd-63-f3g" firstAttribute="bottom" secondItem="nOw-hl-lKK" secondAttribute="bottom" id="YO7-mR-SqC"/>
                                     <constraint firstAttribute="height" constant="56" id="q48-Jk-dMh"/>
+                                    <constraint firstItem="3Pd-63-f3g" firstAttribute="centerY" secondItem="VPO-Rc-shP" secondAttribute="centerY" id="xEL-ob-hCJ"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7yG-kF-hww">
@@ -41,6 +59,8 @@
                     </view>
                     <connections>
                         <outlet property="accountsTableView" destination="7yG-kF-hww" id="ef6-yf-baz"/>
+                        <outlet property="toggleVisibilityButton" destination="3Pd-63-f3g" id="9g2-Qx-JL6"/>
+                        <outlet property="toggleVisibilityButtonImageView" destination="nOw-hl-lKK" id="wfj-LI-cqU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,4 +68,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eye_fill" width="512" height="512"/>
+    </resources>
 </document>
