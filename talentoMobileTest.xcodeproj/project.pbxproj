@@ -186,9 +186,9 @@
 		6FAB062A2454B5CC004D2A3D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6FAB06412454BC05004D2A3D /* CustomCells */,
 				6FAB05FB2454B441004D2A3D /* AccountsListViewController.swift */,
 				6FAB05FD2454B441004D2A3D /* AccountsList.storyboard */,
+				6FAB06412454BC05004D2A3D /* CustomCells */,
 			);
 			path = View;
 			sourceTree = "<group>";

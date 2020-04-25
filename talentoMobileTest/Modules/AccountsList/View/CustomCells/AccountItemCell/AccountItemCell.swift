@@ -24,6 +24,14 @@ class AccountItemCell: UITableViewCell {
         return UINib(nibName: identifier, bundle: Bundle.init(for: self))
     }
     
+    var model: Account? {
+        didSet {
+            let accountNumberEnumValue = self.model?.accountNumber
+            let accountNumber = getAccountNumberFrom(accountNumberEnumValue)
+            accountNumberLabel.text = accountNumber
+        }
+    }
+    
     // MARK: Life Cycle
     
     override func awakeFromNib() {
@@ -35,6 +43,23 @@ class AccountItemCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         
+    }
+    
+    // MARK: Methods
+    
+    private func getAccountNumberFrom(_ value: AccountNumber?) -> String {
+        var stringValue = ""
+        
+        switch value {
+        case .int(let int):
+            stringValue = String(int)
+        case .string(let string):
+            stringValue = string
+        case .none:
+            return stringValue
+        }
+        
+        return stringValue
     }
     
 }

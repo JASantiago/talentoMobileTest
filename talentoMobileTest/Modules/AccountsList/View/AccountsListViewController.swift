@@ -19,6 +19,17 @@ class AccountsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        presenter.delegate = self
+        presenter.getAccounts()
+    }
+    
+    // MARK: Properties
+    
+    private let presenter = AccountsListPresenter()
+    private var accountsList: [Account] = [] {
+        didSet {
+            accountsTableView.reloadData()
+        }
     }
     
     // MARK: Methods
@@ -31,15 +42,26 @@ class AccountsListViewController: UIViewController {
 
 }
 
+// MARK: TableView Delegate Methods
+
 extension AccountsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return accountsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
-        guard let customCell = accountsTableView.dequeueReusableCell(withIdentifier: AccountItemCell.identifier, for: indexPath) as? AccountItemCell else { return cell}
+        guard let customCell = accountsTableView.dequeueReusableCell(withIdentifier: AccountItemCell.identifier, for: indexPath) as? AccountItemCell else { return cell }
+        customCell.model = accountsList[indexPath.row]
         cell = customCell
         return cell
+    }
+}
+
+// MARK: Presenter Methods
+
+extension AccountsListViewController: AccountsListDelegate {
+    func updateListWith(data: AccountListResponse) {
+        accountsList = data.accounts
     }
 }
