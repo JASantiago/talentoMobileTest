@@ -74,6 +74,10 @@ extension AccountsListViewController: UITableViewDelegate, UITableViewDataSource
         cell = customCell
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 114.0
+    }
 }
 
 // MARK: Presenter Methods

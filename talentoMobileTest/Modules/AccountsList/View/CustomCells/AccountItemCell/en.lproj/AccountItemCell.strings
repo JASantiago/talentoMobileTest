@@ -1,0 +1,8 @@
+/* Class = "UILabel"; text = "Account Balance:"; ObjectID = "fG0-nQ-NGR"; */
+"fG0-nQ-NGR.text" = "Account Balance:";
+
+/* Class = "UILabel"; text = "Account Number:"; ObjectID = "kr4-0Z-paG"; */
+"kr4-0Z-paG.text" = "Account Number:";
+
+/* Class = "UILabel"; text = "IBAN:"; ObjectID = "xga-FN-I4R"; */
+"xga-FN-I4R.text" = "IBAN:";

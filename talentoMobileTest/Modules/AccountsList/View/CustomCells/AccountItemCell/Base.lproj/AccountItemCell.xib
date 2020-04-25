@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="AccountItemCell" customModule="talentoMobileTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr4-0Z-paG">
+                        <rect key="frame" x="16" y="12" width="127" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-h5-IFz">
+                        <rect key="frame" x="245" y="12" width="59" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG0-nQ-NGR">
+                        <rect key="frame" x="16" y="44" width="133.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB7-3P-Rg8">
+                        <rect key="frame" x="248.5" y="45" width="55.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBAN:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xga-FN-I4R">
+                        <rect key="frame" x="16" y="77" width="43" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-Rf-FkC">
+                        <rect key="frame" x="248.5" y="78" width="55.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o7D-Rf-FkC" firstAttribute="top" secondItem="qB7-3P-Rg8" secondAttribute="bottom" constant="12" id="437-dy-3dy"/>
+                    <constraint firstAttribute="trailing" secondItem="o7D-Rf-FkC" secondAttribute="trailing" constant="16" id="50V-my-B1E"/>
+                    <constraint firstItem="xga-FN-I4R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="6Fv-It-Ewl"/>
+                    <constraint firstItem="8vx-h5-IFz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="9Zy-sx-lsz"/>
+                    <constraint firstItem="fG0-nQ-NGR" firstAttribute="top" secondItem="kr4-0Z-paG" secondAttribute="bottom" constant="12" id="GLI-RS-4kV"/>
+                    <constraint firstAttribute="trailing" secondItem="qB7-3P-Rg8" secondAttribute="trailing" constant="16" id="PtA-gk-ml0"/>
+                    <constraint firstItem="fG0-nQ-NGR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Rsc-Em-GPY"/>
+                    <constraint firstItem="xga-FN-I4R" firstAttribute="top" secondItem="fG0-nQ-NGR" secondAttribute="bottom" constant="12" id="UtQ-GT-O8T"/>
+                    <constraint firstItem="qB7-3P-Rg8" firstAttribute="top" secondItem="8vx-h5-IFz" secondAttribute="bottom" constant="12" id="W3n-Ri-E2p"/>
+                    <constraint firstItem="kr4-0Z-paG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="coT-u6-Jx5"/>
+                    <constraint firstItem="kr4-0Z-paG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dLA-75-7au"/>
+                    <constraint firstAttribute="trailing" secondItem="8vx-h5-IFz" secondAttribute="trailing" constant="16" id="jyR-pw-T0f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accountBalanceLabel" destination="qB7-3P-Rg8" id="TkW-yj-1UO"/>
+                <outlet property="accountNumberLabel" destination="8vx-h5-IFz" id="0ay-fx-mGe"/>
+                <outlet property="ibanLabel" destination="o7D-Rf-FkC" id="kYx-Sk-bqK"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="182.8125"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -21,7 +21,6 @@ class AccountsListPresenter {
     // MARK: Methods
     
     func getAccounts() {
-        #warning("TODO: Handle Error")
         guard let accountData = AccountsListDataManager.shared.fetchAccountsData() else { return }
         delegate?.updateListWith(data: accountData)
     }

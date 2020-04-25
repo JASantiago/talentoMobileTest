@@ -13,6 +13,8 @@ class AccountItemCell: UITableViewCell {
     // MARK: Outlets
     
     @IBOutlet weak var accountNumberLabel: UILabel!
+    @IBOutlet weak var accountBalanceLabel: UILabel!
+    @IBOutlet weak var ibanLabel: UILabel!
     
     // MARK: Properties
     
@@ -29,20 +31,15 @@ class AccountItemCell: UITableViewCell {
             let accountNumberEnumValue = self.model?.accountNumber
             let accountNumber = getAccountNumberFrom(accountNumberEnumValue)
             accountNumberLabel.text = accountNumber
+            accountBalanceLabel.text = String(self.model?.accountBalanceInCents ?? 0)
+            ibanLabel.text = self.model?.iban
         }
     }
-    
+
     // MARK: Life Cycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        
     }
     
     // MARK: Methods
@@ -58,7 +55,6 @@ class AccountItemCell: UITableViewCell {
         case .none:
             return stringValue
         }
-        
         return stringValue
     }
     

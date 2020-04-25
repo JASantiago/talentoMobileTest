@@ -21,9 +21,6 @@
 		6FAB06312454B68A004D2A3D /* AccountsListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06302454B68A004D2A3D /* AccountsListDataManager.swift */; };
 		6FAB06322454B68A004D2A3D /* AccountsListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06302454B68A004D2A3D /* AccountsListDataManager.swift */; };
 		6FAB06332454B68A004D2A3D /* AccountsListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06302454B68A004D2A3D /* AccountsListDataManager.swift */; };
-		6FAB06352454B6AF004D2A3D /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06342454B6AF004D2A3D /* Strings.strings */; };
-		6FAB06362454B6AF004D2A3D /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06342454B6AF004D2A3D /* Strings.strings */; };
-		6FAB06372454B6AF004D2A3D /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06342454B6AF004D2A3D /* Strings.strings */; };
 		6FAB063A2454BADB004D2A3D /* AccountListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06392454BADB004D2A3D /* AccountListResponse.swift */; };
 		6FAB063B2454BADB004D2A3D /* AccountListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06392454BADB004D2A3D /* AccountListResponse.swift */; };
 		6FAB063C2454BADB004D2A3D /* AccountListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06392454BADB004D2A3D /* AccountListResponse.swift */; };
@@ -33,9 +30,9 @@
 		6FAB06452454BC47004D2A3D /* AccountItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06432454BC47004D2A3D /* AccountItemCell.swift */; };
 		6FAB06462454BC47004D2A3D /* AccountItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06432454BC47004D2A3D /* AccountItemCell.swift */; };
 		6FAB06472454BC47004D2A3D /* AccountItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06432454BC47004D2A3D /* AccountItemCell.swift */; };
-		6FAB06482454BC47004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06442454BC47004D2A3D /* AccountItemCell.xib */; };
-		6FAB06492454BC47004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06442454BC47004D2A3D /* AccountItemCell.xib */; };
-		6FAB064A2454BC47004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06442454BC47004D2A3D /* AccountItemCell.xib */; };
+		6FAB06542454F60B004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06582454F60B004D2A3D /* AccountItemCell.xib */; };
+		6FAB06552454F60B004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06582454F60B004D2A3D /* AccountItemCell.xib */; };
+		6FAB06562454F60B004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06582454F60B004D2A3D /* AccountItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,11 +69,14 @@
 		6FAB061B2454B445004D2A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FAB062B2454B651004D2A3D /* AccountsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListPresenter.swift; sourceTree = "<group>"; };
 		6FAB06302454B68A004D2A3D /* AccountsListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListDataManager.swift; sourceTree = "<group>"; };
-		6FAB06342454B6AF004D2A3D /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
 		6FAB06392454BADB004D2A3D /* AccountListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListResponse.swift; sourceTree = "<group>"; };
 		6FAB063D2454BB45004D2A3D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		6FAB06432454BC47004D2A3D /* AccountItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItemCell.swift; sourceTree = "<group>"; };
-		6FAB06442454BC47004D2A3D /* AccountItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountItemCell.xib; sourceTree = "<group>"; };
+		6FAB06572454F60B004D2A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AccountItemCell.xib; sourceTree = "<group>"; };
+		6FAB065A2454F610004D2A3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AccountItemCell.strings; sourceTree = "<group>"; };
+		6FAB065B2454F6A2004D2A3D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/AccountsList.strings"; sourceTree = "<group>"; };
+		6FAB065C2454F6A2004D2A3D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/AccountItemCell.strings"; sourceTree = "<group>"; };
+		6FAB065D2454F6A2004D2A3D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,6 @@
 				6FAB05F92454B441004D2A3D /* SceneDelegate.swift */,
 				6FAB06002454B445004D2A3D /* Assets.xcassets */,
 				6FAB06022454B445004D2A3D /* LaunchScreen.storyboard */,
-				6FAB06342454B6AF004D2A3D /* Strings.strings */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -214,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				6FAB06432454BC47004D2A3D /* AccountItemCell.swift */,
-				6FAB06442454BC47004D2A3D /* AccountItemCell.xib */,
+				6FAB06582454F60B004D2A3D /* AccountItemCell.xib */,
 			);
 			path = AccountItemCell;
 			sourceTree = "<group>";
@@ -305,6 +304,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 6FAB05EB2454B441004D2A3D;
 			productRefGroup = 6FAB05F52454B441004D2A3D /* Products */;
@@ -324,10 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FAB06042454B445004D2A3D /* LaunchScreen.storyboard in Resources */,
-				6FAB06352454B6AF004D2A3D /* Strings.strings in Resources */,
 				6FAB06012454B445004D2A3D /* Assets.xcassets in Resources */,
 				6FAB05FF2454B441004D2A3D /* AccountsList.storyboard in Resources */,
-				6FAB06482454BC47004D2A3D /* AccountItemCell.xib in Resources */,
+				6FAB06542454F60B004D2A3D /* AccountItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FAB06492454BC47004D2A3D /* AccountItemCell.xib in Resources */,
-				6FAB06362454B6AF004D2A3D /* Strings.strings in Resources */,
+				6FAB06552454F60B004D2A3D /* AccountItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FAB064A2454BC47004D2A3D /* AccountItemCell.xib in Resources */,
-				6FAB06372454B6AF004D2A3D /* Strings.strings in Resources */,
+				6FAB06562454F60B004D2A3D /* AccountItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +410,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6FAB05FE2454B441004D2A3D /* Base */,
+				6FAB065B2454F6A2004D2A3D /* es-419 */,
 			);
 			name = AccountsList.storyboard;
 			sourceTree = "<group>";
@@ -421,8 +419,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				6FAB06032454B445004D2A3D /* Base */,
+				6FAB065D2454F6A2004D2A3D /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6FAB06582454F60B004D2A3D /* AccountItemCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FAB06572454F60B004D2A3D /* Base */,
+				6FAB065A2454F610004D2A3D /* en */,
+				6FAB065C2454F6A2004D2A3D /* es-419 */,
+			);
+			name = AccountItemCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -492,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
