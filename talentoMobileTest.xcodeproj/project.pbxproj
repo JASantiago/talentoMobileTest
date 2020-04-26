@@ -14,7 +14,6 @@
 		6FAB06012454B445004D2A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06002454B445004D2A3D /* Assets.xcassets */; };
 		6FAB06042454B445004D2A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06022454B445004D2A3D /* LaunchScreen.storyboard */; };
 		6FAB060F2454B445004D2A3D /* talentoMobileTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB060E2454B445004D2A3D /* talentoMobileTestTests.swift */; };
-		6FAB061A2454B445004D2A3D /* talentoMobileTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB06192454B445004D2A3D /* talentoMobileTestUITests.swift */; };
 		6FAB062C2454B651004D2A3D /* AccountsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB062B2454B651004D2A3D /* AccountsListPresenter.swift */; };
 		6FAB062D2454B651004D2A3D /* AccountsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB062B2454B651004D2A3D /* AccountsListPresenter.swift */; };
 		6FAB062E2454B651004D2A3D /* AccountsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB062B2454B651004D2A3D /* AccountsListPresenter.swift */; };
@@ -33,6 +32,11 @@
 		6FAB06542454F60B004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06582454F60B004D2A3D /* AccountItemCell.xib */; };
 		6FAB06552454F60B004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06582454F60B004D2A3D /* AccountItemCell.xib */; };
 		6FAB06562454F60B004D2A3D /* AccountItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB06582454F60B004D2A3D /* AccountItemCell.xib */; };
+		6FAB065E2454FE40004D2A3D /* AccountsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB05FD2454B441004D2A3D /* AccountsList.storyboard */; };
+		6FAB065F2454FE40004D2A3D /* AccountsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB05FD2454B441004D2A3D /* AccountsList.storyboard */; };
+		6FAB066124550C18004D2A3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB066024550C18004D2A3D /* Constants.swift */; };
+		6FAB066224550C18004D2A3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB066024550C18004D2A3D /* Constants.swift */; };
+		6FAB066324550C18004D2A3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB066024550C18004D2A3D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +69,6 @@
 		6FAB060E2454B445004D2A3D /* talentoMobileTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = talentoMobileTestTests.swift; sourceTree = "<group>"; };
 		6FAB06102454B445004D2A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FAB06152454B445004D2A3D /* talentoMobileTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = talentoMobileTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FAB06192454B445004D2A3D /* talentoMobileTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = talentoMobileTestUITests.swift; sourceTree = "<group>"; };
-		6FAB061B2454B445004D2A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FAB062B2454B651004D2A3D /* AccountsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListPresenter.swift; sourceTree = "<group>"; };
 		6FAB06302454B68A004D2A3D /* AccountsListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListDataManager.swift; sourceTree = "<group>"; };
 		6FAB06392454BADB004D2A3D /* AccountListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListResponse.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		6FAB065B2454F6A2004D2A3D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/AccountsList.strings"; sourceTree = "<group>"; };
 		6FAB065C2454F6A2004D2A3D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/AccountItemCell.strings"; sourceTree = "<group>"; };
 		6FAB065D2454F6A2004D2A3D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		6FAB066024550C18004D2A3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +112,6 @@
 			children = (
 				6FAB05F62454B441004D2A3D /* talentoMobileTest */,
 				6FAB060D2454B445004D2A3D /* talentoMobileTestTests */,
-				6FAB06182454B445004D2A3D /* talentoMobileTestUITests */,
 				6FAB05F52454B441004D2A3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,15 +145,6 @@
 			path = talentoMobileTestTests;
 			sourceTree = "<group>";
 		};
-		6FAB06182454B445004D2A3D /* talentoMobileTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6FAB06192454B445004D2A3D /* talentoMobileTestUITests.swift */,
-				6FAB061B2454B445004D2A3D /* Info.plist */,
-			);
-			path = talentoMobileTestUITests;
-			sourceTree = "<group>";
-		};
 		6FAB06272454B562004D2A3D /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +152,7 @@
 				6FAB05F92454B441004D2A3D /* SceneDelegate.swift */,
 				6FAB06002454B445004D2A3D /* Assets.xcassets */,
 				6FAB06022454B445004D2A3D /* LaunchScreen.storyboard */,
+				6FAB066024550C18004D2A3D /* Constants.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -334,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAB065F2454FE40004D2A3D /* AccountsList.storyboard in Resources */,
 				6FAB06552454F60B004D2A3D /* AccountItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAB065E2454FE40004D2A3D /* AccountsList.storyboard in Resources */,
 				6FAB06562454F60B004D2A3D /* AccountItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +357,7 @@
 				6FAB063A2454BADB004D2A3D /* AccountListResponse.swift in Sources */,
 				6FAB05FA2454B441004D2A3D /* SceneDelegate.swift in Sources */,
 				6FAB063E2454BB45004D2A3D /* Account.swift in Sources */,
+				6FAB066124550C18004D2A3D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +369,7 @@
 				6FAB063F2454BB45004D2A3D /* Account.swift in Sources */,
 				6FAB063B2454BADB004D2A3D /* AccountListResponse.swift in Sources */,
 				6FAB062D2454B651004D2A3D /* AccountsListPresenter.swift in Sources */,
+				6FAB066224550C18004D2A3D /* Constants.swift in Sources */,
 				6FAB06322454B68A004D2A3D /* AccountsListDataManager.swift in Sources */,
 				6FAB060F2454B445004D2A3D /* talentoMobileTestTests.swift in Sources */,
 			);
@@ -386,7 +384,7 @@
 				6FAB063C2454BADB004D2A3D /* AccountListResponse.swift in Sources */,
 				6FAB062E2454B651004D2A3D /* AccountsListPresenter.swift in Sources */,
 				6FAB06332454B68A004D2A3D /* AccountsListDataManager.swift in Sources */,
-				6FAB061A2454B445004D2A3D /* talentoMobileTestUITests.swift in Sources */,
+				6FAB066324550C18004D2A3D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

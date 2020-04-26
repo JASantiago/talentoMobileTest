@@ -10,7 +10,7 @@
         <!--Accounts List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="AccountsListViewController" id="BYZ-38-t0r" customClass="AccountsListViewController" customModule="talentoMobileTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountsList" id="BYZ-38-t0r" customClass="AccountsListViewController" customModule="talentoMobileTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,6 +20,9 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye_fill" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-hl-lKK">
                                         <rect key="frame" x="370" y="16" width="24" height="24"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="eyeImage"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pd-63-f3g">
                                         <rect key="frame" x="370" y="16" width="24" height="24"/>
@@ -39,6 +42,9 @@
                                     <constraint firstAttribute="height" constant="56" id="q48-Jk-dMh"/>
                                     <constraint firstItem="3Pd-63-f3g" firstAttribute="centerY" secondItem="VPO-Rc-shP" secondAttribute="centerY" id="xEL-ob-hCJ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="AccessibiltyLabel" value="navBar"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7yG-kF-hww">
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>

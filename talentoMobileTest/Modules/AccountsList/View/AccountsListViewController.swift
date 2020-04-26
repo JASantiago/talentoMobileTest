@@ -22,24 +22,16 @@ class AccountsListViewController: UIViewController {
         super.viewDidLoad()
         configureTableView()
         presenter.delegate = self
-        presenter.getAccounts()
-        toggleVisibilityButton.addTarget(self, action: #selector(updateVisibilityValue), for: .touchUpInside)
+        presenter.getAccounts(visibility: enableFullListVisibility)
+        toggleVisibilityButton.addTarget(self, action: #selector(toggeVisibilityValue), for: .touchUpInside)
     }
     
     // MARK: Properties
     
     private let presenter = AccountsListPresenter()
-    private var accountsList: [Account] = []
-    private var visibleAccountData: [Account] = [] {
-        didSet {
-            accountsTableView.reloadData()
-        }
-    }
-    private var enableFullListVisibility = false {
-        didSet {
-            triggerListVisibility()
-        }
-    }
+    private var visibleAccountData: [Account] = []
+    private var enableFullListVisibility = false
+    private var refreshControl = UIRefreshControl()
     
     // MARK: Methods
     
@@ -47,15 +39,16 @@ class AccountsListViewController: UIViewController {
         accountsTableView.delegate = self
         accountsTableView.dataSource = self
         accountsTableView.register(AccountItemCell.nib, forCellReuseIdentifier: AccountItemCell.identifier)
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        accountsTableView.refreshControl = refreshControl
     }
     
-    @objc private func updateVisibilityValue() {
-        enableFullListVisibility = !enableFullListVisibility
+    @objc func toggeVisibilityValue() {
+        presenter.getAccounts(visibility: !enableFullListVisibility)
     }
     
-    private func triggerListVisibility() {
-        visibleAccountData = enableFullListVisibility ? accountsList : accountsList.filter({ $0.isVisible == true })
-        toggleVisibilityButtonImageView?.image = enableFullListVisibility ? UIImage(named: "eye_slash_fill") : UIImage(named: "eye_fill")
+    @objc func refresh(_ sender: AnyObject) {
+       presenter.getAccounts(visibility: enableFullListVisibility)
     }
 
 }
@@ -83,8 +76,12 @@ extension AccountsListViewController: UITableViewDelegate, UITableViewDataSource
 // MARK: Presenter Methods
 
 extension AccountsListViewController: AccountsListDelegate {
-    func updateListWith(data: AccountListResponse) {
-        accountsList = data.accounts
-        triggerListVisibility()
+    func updateListWith(data: [Account], visibility: Bool) {
+        visibleAccountData = data
+        accountsTableView.reloadData()
+        enableFullListVisibility = visibility
+        toggleVisibilityButtonImageView?.image = enableFullListVisibility ? UIImage(named: Constants.imageNames.eyeSlash) : UIImage(named: Constants.imageNames.eyeFill)
+        refreshControl.endRefreshing()
     }
+
 }

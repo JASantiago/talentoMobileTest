@@ -9,7 +9,7 @@
 import Foundation
 
 protocol AccountsListDelegate {
-    func updateListWith(data: AccountListResponse)
+    func updateListWith(data: [Account], visibility: Bool)
 }
 
 class AccountsListPresenter {
@@ -20,8 +20,13 @@ class AccountsListPresenter {
     
     // MARK: Methods
     
-    func getAccounts() {
+    func getAccounts(visibility: Bool) {
         guard let accountData = AccountsListDataManager.shared.fetchAccountsData() else { return }
-        delegate?.updateListWith(data: accountData)
+        delegate?.updateListWith(data: filterVisible(data: accountData.accounts, visibility: visibility), visibility: visibility)
     }
+    
+    func filterVisible(data: [Account], visibility: Bool) -> [Account] {
+         return visibility ? data : data.filter({ $0.isVisible == true })
+    }
+    
 }
